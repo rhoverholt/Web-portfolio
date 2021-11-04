@@ -1,0 +1,146 @@
+:root {
+    --title-background:rgb(48, 48, 48);
+    --title-color:rgb(107, 116, 23);
+}
+
+
+header {
+    background-color: var(--title-background);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    background-color: var(--title-color);
+    color: var(--title-background);
+    padding-left: 5ch;
+    padding-right: 1ch;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header nav {
+    padding-right: 5ch;
+}
+
+header nav a {
+    margin: 1ch;
+    color: var(--title-color);
+}
+
+header nav a:hover {
+    color: var(--title-background);
+    background-color: var(--title-color);
+}
+
+.banner {
+    background-color: var(--title-color);
+    position:relative;
+}
+
+.banner-start {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.banner-end {
+    position: absolute;
+    width: 80%;
+}
+
+.banner h1 {
+    background-color: var(--title-background);
+    color: var(--title-color);
+    position: absolute;
+    padding: 1% 5% 1% 1%;
+    right: 0%;
+    bottom: 5%;
+    font-size: larger;
+}
+
+section {
+    display:flex;
+    width: 100%;
+    margin: 2%;
+}
+
+.section-title {
+    width:20%;
+    margin-top: 0px;
+    color: var(--title-color);
+}
+
+.section-details {
+    font-size: 10px;
+    width: 80%;
+    padding-right: 5ch;
+}
+
+#work .section-details {
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.project a {
+    position: relative;
+}
+
+.project {
+    display:inline-block;
+    width: 49%;
+}
+
+.project img {
+    width:100%;
+}
+
+.first-project {
+    width: 100%;
+}
+
+.first-project img {
+    width: 100%;
+}
+
+.project h1 {
+    position: absolute;
+    top: -300%;
+    padding-left: 5%;
+    background-color: var(--title-background);
+    color: var(--title-color);
+    font-size: larger;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#contact-me .section-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+}
+
+#contact-me .section-details {
+    display: flex;
+    float: right;
+    justify-content: space-around;
+}
+
+#contact-me div,
+#contact-me a {
+    align-items: center;
+    color: var(--title-color);
+    font-size: large;
+}
+
+#contact-me a:hover {
+    background-color:var(--title-background);
+    color: var(--title-color);
+}
