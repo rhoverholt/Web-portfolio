@@ -175,7 +175,7 @@ section {
 @media screen and (max-width:845px) {
     #contact-me div,
     #contact-me a {
-        font-size: smaller;
+        font-size: var(--small-font);
     }
 }
 
@@ -217,8 +217,8 @@ section {
         margin-bottom: 2%;
     }
 
-    .banner h1 {
-        font-size: small;
+    .section-details {
+        padding-right: 0px;
     }
 
     .project, .section-details {
@@ -229,7 +229,8 @@ section {
         display: block;
     }
 
-    .section-details {
-        padding-right: 0px;
+    #contact-me div,
+    #contact-me a {
+        font-size: var(--small-font);
     }
 }
