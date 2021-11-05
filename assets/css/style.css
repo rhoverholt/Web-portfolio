@@ -1,9 +1,17 @@
+
+/* Asign constants for the colors so they can be easily changed */
 :root {
     --title-background:rgb(48, 48, 48);
     --title-color:rgb(107, 116, 23);
 }
 
+/****************************************************/
+/* Style the HTML so it looks good at maximum width */
+/****************************************************/
 
+/************************/
+/* Setup the header row */
+/************************/
 header {
     background-color: var(--title-background);
     display: flex;
@@ -15,18 +23,20 @@ header {
 .header-title {
     background-color: var(--title-color);
     color: var(--title-background);
-    padding-left: 5ch;
-    padding-right: 1ch;
+    padding-left: 5%;
+    padding-right: 1%;
     font-size: larger;
     font-weight: bolder;
 }
 
 header nav {
-    padding-right: 5ch;
+    padding-right: 1%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav a {
-    margin: 1ch;
     color: var(--title-color);
 }
 
@@ -35,6 +45,9 @@ header nav a:hover {
     background-color: var(--title-color);
 }
 
+/***************************************************************/
+/* Arrange the banner row, both my avatar and the banner image */
+/***************************************************************/
 .banner {
     background-color: var(--title-color);
     position:relative;
@@ -60,6 +73,9 @@ header nav a:hover {
     font-size: larger;
 }
 
+/******************************************/
+/* Format the primary section information */
+/******************************************/
 section {
     display:flex;
     width: 100%;
@@ -75,9 +91,12 @@ section {
 .section-details {
     font-size: 10px;
     width: 80%;
-    padding-right: 5ch;
+    padding-right: 5%;
 }
 
+/**********************************************************************************/
+/* Introduce specific formats that allow the work images to display appropriately */
+/**********************************************************************************/
 #work .section-details {
     display: inline-block;
     text-align: justify;
@@ -114,6 +133,10 @@ section {
     font-size: larger;
 }
 
+/*********************************/
+/* Format the Contact-Me section */
+/*********************************/
+
 #contact-me {
     display: flex;
     justify-content: space-between;
@@ -124,7 +147,6 @@ section {
 #contact-me .section-title {
     margin-top: auto;
     margin-bottom: auto;
-    width: auto;
 }
 
 #contact-me .section-details {
@@ -143,4 +165,69 @@ section {
 #contact-me a:hover {
     background-color:var(--title-background);
     color: var(--title-color);
+}
+
+/*******************************************************************/
+/* As the screen width shrinks, some of the above needs to change. */
+/*******************************************************************/
+
+/* Shrink the contact-me information to keep it from wrapping */
+@media screen and (max-width:845px) {
+    #contact-me div,
+    #contact-me a {
+        font-size: smaller;
+    }
+}
+
+/* Shrink the section titles to keep them from wrapping */
+@media screen and (max-width:654px) {
+    .section-title {
+        font-size: medium;
+    }
+}
+
+/* Due to the much smaller width, change from a side by side display to everything being in a column */
+@media screen and (max-width:454px) {
+
+    header, section, #contact-me {
+        display: block;
+        text-align-last: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .header-title {
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 2% 0% auto;
+    }
+
+    .section-title {
+        width: 100%;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: small;
+    }
+
+    .project, .section-details {
+        width: 100%;
+    }
+}
+
+/* Finally, the contact information all needs it's own line */
+@media screen and (max-width:350px) {
+
+    #contact-me .section-details {
+        display: block;
+    }
+
+    .section-details {
+        padding-right: 0px;
+    }
 }
