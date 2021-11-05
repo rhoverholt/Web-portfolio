@@ -1,8 +1,12 @@
 
-/* Asign constants for the colors so they can be easily changed */
+/* Asign constants for the colors and fonts so they can be easily changed */
 :root {
     --title-background:rgb(48, 48, 48);
     --title-color:rgb(107, 116, 23);
+    --largest-font: 36px;
+    --large-font: 28px;
+    --medium-font: 18px;
+    --small-font: 12px;
 }
 
 /****************************************************/
@@ -18,6 +22,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 2% 0%;
 }
 
 .header-title {
@@ -25,7 +30,7 @@ header {
     color: var(--title-background);
     padding-left: 5%;
     padding-right: 1%;
-    font-size: larger;
+    font-size: var(--largest-font);
     font-weight: bolder;
 }
 
@@ -38,6 +43,7 @@ header nav {
 
 header nav a {
     color: var(--title-color);
+    font-size: var(--large-font);
 }
 
 header nav a:hover {
@@ -70,7 +76,7 @@ header nav a:hover {
     padding: 1% 5% 1% 1%;
     right: 0%;
     bottom: 5%;
-    font-size: larger;
+    font-size: var(--large-font);
 }
 
 /******************************************/
@@ -86,12 +92,18 @@ section {
     width:20%;
     margin-top: 0px;
     color: var(--title-color);
+    font-size: var(--large-font);
 }
 
 .section-details {
-    font-size: 10px;
+    font-size: var(--medium-font);
     width: 80%;
     padding-right: 5%;
+}
+
+.section-details p {
+    line-height: 120%;
+    margin-bottom: 1ch;
 }
 
 /**********************************************************************************/
@@ -112,25 +124,18 @@ section {
     width: 49%;
 }
 
-.project img {
+.project img, .first-project, .first-project img {
     width:100%;
-}
-
-.first-project {
-    width: 100%;
-}
-
-.first-project img {
-    width: 100%;
 }
 
 .project h1 {
     position: absolute;
     top: -300%;
     padding-left: 5%;
+    padding-right: 1%;
     background-color: var(--title-background);
     color: var(--title-color);
-    font-size: larger;
+    font-size: var(--large-font);
 }
 
 /*********************************/
@@ -144,11 +149,6 @@ section {
     align-items: center;
 }
 
-#contact-me .section-title {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 #contact-me .section-details {
     display: flex;
     float: right;
@@ -159,7 +159,7 @@ section {
 #contact-me a {
     align-items: center;
     color: var(--title-color);
-    font-size: large;
+    font-size: var(--medium-font);
 }
 
 #contact-me a:hover {
@@ -179,15 +179,20 @@ section {
     }
 }
 
-/* Shrink the section titles to keep them from wrapping */
-@media screen and (max-width:654px) {
-    .section-title {
-        font-size: medium;
+/* Shrink text to prevent wrapping */
+@media screen and (max-width:760px) {
+    
+    .header-title {
+        font-size: var(--large-font);
+    }
+    
+    .section-title, .project h1, header nav a, .banner h1 {
+        font-size: var(--medium-font);
     }
 }
 
 /* Due to the much smaller width, change from a side by side display to everything being in a column */
-@media screen and (max-width:454px) {
+@media screen and (max-width:540px) {
 
     header, section, #contact-me {
         display: block;
@@ -209,6 +214,7 @@ section {
         width: 100%;
         text-decoration: underline;
         text-align: center;
+        margin-bottom: 2%;
     }
 
     .banner h1 {
@@ -218,10 +224,6 @@ section {
     .project, .section-details {
         width: 100%;
     }
-}
-
-/* Finally, the contact information all needs it's own line */
-@media screen and (max-width:350px) {
 
     #contact-me .section-details {
         display: block;
