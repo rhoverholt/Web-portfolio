@@ -1,8 +1,10 @@
 
 /* Asign constants for the colors and fonts so they can be easily changed */
 :root {
-    --title-background:rgb(48, 48, 48);
-    --title-color:rgb(107, 116, 23);
+    --title-background:rgb(161, 161, 161);
+    --title-color:rgb(45, 50, 83);
+    --old-title-background:rgb(48, 48, 48);
+    --old-title-color:rgb(107, 116, 23);
     --largest-font: 36px;
     --large-font: 28px;
     --medium-font: 18px;
@@ -56,17 +58,26 @@ header nav a:hover {
 /***************************************************************/
 .banner {
     background-color: var(--title-color);
-    position:relative;
+    position: relative;
+    display: flex;
 }
 
 .banner-start {
+    display: inline-block;
     width: 20%;
     border-radius: 50%;
+    padding: 20px;
 }
 
 .banner-end {
-    position: absolute;
+    display: inline-block;
+    margin: 60px 20px 0px 0px;
+    background: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200px;
     width: 80%;
+    height: 15%;
 }
 
 .banner h1 {
@@ -148,6 +159,7 @@ section {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #contact-me .section-details {
