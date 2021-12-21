@@ -128,7 +128,7 @@ section {
 /**********************************************************************************/
 #work .section-details {
     display: inline-block;
-    text-align: justify;
+    text-align: center;
     text-align-last: center;
 }
 
@@ -155,7 +155,7 @@ section {
 }
 
 .project {
-    margin: 10px 0px 30px 0px;
+    margin: 20px 0px 10px 0px;
 }
 
 .project h1 {
@@ -191,10 +191,15 @@ section {
     font-size: var(--medium-font);
 }
 
-#contact-me a:hover {
-    background-color:var(--title-background);
+.my-link {
     color: var(--title-color);
 }
+
+.my-link:hover {
+background-color:var(--title-background);
+color: var(--title-color);
+}
+
 
 /*******************************************************************/
 /* As the screen width shrinks, some of the above needs to change. */
