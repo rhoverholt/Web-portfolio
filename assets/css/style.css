@@ -5,6 +5,11 @@
     --title-color:rgb(45, 50, 83);
     --old-title-background:rgb(48, 48, 48);
     --old-title-color:rgb(107, 116, 23);
+    --banner-font-xl: 150px;
+    --banner-font-1400: 125px;
+    --banner-font-1175: 100px;
+    --banner-font-950: 75px;
+    --banner-font-760: 50px;
     --largest-font: 36px;
     --large-font: 28px;
     --medium-font: 18px;
@@ -24,7 +29,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0%;
+    padding: 1% 0%;
 }
 
 .header-title {
@@ -71,11 +76,11 @@ header nav a:hover {
 
 .banner-end {
     display: inline-block;
-    margin: 60px 20px 0px 0px;
+    margin: auto 20px auto 0px;
     background: black;
     color: green;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 200px;
+    font-size: var(--banner-font-xl);
     width: 80%;
     height: 15%;
 }
@@ -127,15 +132,25 @@ section {
     text-align-last: center;
 }
 
+.first-project {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.other-projects {
+    display: inline-block;
+    width: 49%;
+}
 
 .project {
     display:inline-block;
-    width: 49%;
-    vertical-align: top;
+    width: 100%;
+/*    vertical-align: top; */
     border: 2px solid var(--title-background);
 }
 
-.project img, .first-project, .first-project img {
+.project img {
     width:100%;
 }
 
@@ -185,6 +200,25 @@ section {
 /* As the screen width shrinks, some of the above needs to change. */
 /*******************************************************************/
 
+/* The banner font needs to react to smaller widths */
+@media screen and (max-width:1400px) {
+    .banner-end {
+        font-size: var(--banner-font-1400);
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .banner-end {
+        font-size: var(--banner-font-1175);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .banner-end {
+        font-size: var(--banner-font-950);
+    }
+}
+
 /* Shrink the contact-me information to keep it from wrapping */
 @media screen and (max-width:845px) {
     #contact-me div,
@@ -196,6 +230,10 @@ section {
 /* Shrink text to prevent wrapping */
 @media screen and (max-width:760px) {
     
+    .banner-end {
+        font-size: var(--banner-font-760);
+    }
+
     .header-title {
         font-size: var(--large-font);
     }
@@ -208,7 +246,16 @@ section {
 /* Due to the much smaller width, change from a side by side display to everything being in a column */
 @media screen and (max-width:540px) {
 
-    header, section, #contact-me {
+    .banner-end {
+        margin-top: 10px;
+    }
+
+    .section-details {
+        padding-right: 0px;
+        text-align-last: left;
+    }
+
+    header, section, #contact-me, #contact-info {
         display: block;
         text-align-last: center;
     }
@@ -231,11 +278,7 @@ section {
         margin-bottom: 2%;
     }
 
-    .section-details {
-        padding-right: 0px;
-    }
-
-    .project, .section-details {
+    .first-project, .other-projects, .project, .section-details {
         width: 100%;
     }
 
@@ -245,6 +288,6 @@ section {
 
     #contact-me div,
     #contact-me a {
-        font-size: var(--small-font);
+        font-size: var(--medium-font);
     }
 }
