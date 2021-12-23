@@ -11,6 +11,10 @@ https://rhoverholt.github.io/Web-portfolio/
 
 HTML, CSS
 
+## Application Preview
+
+![A screen shot of the website](./assets/images/web-development-screen-shot.png)
+
 ## License
 
 MIT
