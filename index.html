@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Web Development Portfolio for RHOverholt -->
 
-<!-- Web Development Portfolio for RHOverholt -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rich Overholt - Software Developer</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Provide my name and site navigation -->
     <header>
-        <h1 class="header-title">Rich Overholt</h1>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#work">Recent Projects</a>
-            <a href="#contact-me">Contact Me</a>
-        </nav>
+      <h1 class="header-title">Rich Overholt</h1>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#work">Recent Projects</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
     </header>
 
     <main>
+      <!-- Present a banner phrase, picture along with an Avatar of myself -->
+      <div class="banner">
+        <img
+          class="banner-start"
+          src="assets/images/personal-headshot.jpg"
+          alt="avatar"
+        />
+        <div class="banner-end">Hello World.</div>
+        <h1>Computer programmer</h1>
+      </div>
 
-        <!-- Present a banner phrase, picture along with an Avatar of myself -->
-        <div class="banner">
-            <img class="banner-start" src="assets/images/personal-headshot.jpg" alt="avatar">
-            <div class="banner-end">
-                Hello World.
-            </div>
-            <h1>Computer programmer</h1>
+      <!-- In this first detailed section, write a brief bio presenting the skills and experience that I would bring to a firm -->
+      <section id="about-me">
+        <h1 class="section-title">About Me</h1>
+
+        <div class="section-details">
+          <p>- 13 years IT experience, 1992-2015</p>
+          <p>
+            - Currently enrolled in a "Full-Stack Web Development" bootcamp
+            through GA Tech
+          </p>
+          <p>
+            - BA/BSE Mathematics/Computer Science University of Pennsylvania
+          </p>
+          <p>
+            - Strong SQL/Database background from a consulting and eventual IT
+            management career
+          </p>
+          <p>- Looking for part-time, programming work</p>
+          <p>
+            -
+            <a class="my-link" href="./assets/images/RHO-Resume.pdf"
+              >Click here to view my resume</a
+            >
+          </p>
         </div>
-        
-        <!-- In this first detailed section, write a brief bio presenting the skills and experience that I would bring to a firm -->
-        <section id="about-me">
-            <h1 class="section-title">About Me</h1>
+      </section>
 
-            <div class="section-details">
-                <p>- 13 years IT experience, 1992-2015</p>
-                <p>- Currently enrolled in a "Full-Stack Web Development" bootcamp through GA Tech</p>
-                <p>- BA/BSE Mathematics/Computer Science University of Pennsylvania</p>
-                <p>- Strong SQL/Database background from a consulting and eventual IT management career</p>
-                <p>- Looking for part-time, programming work</p>
-                <p>- <a class="my-link" href="./assets/images/rho-resume-2021.pdf">Click here to view my resume</a></p>
+      <!-- Present several work samples -->
+      <section id="work">
+        <h1 class="section-title">Recent Projects</h1>
+
+        <div class="section-details">
+          <div class="first-project">
+            <div class="project">
+              <a href="https://rhoverholt.github.io/TicTacToe/">
+                <h1>Tic Tac Toe - dynamic</h1>
+                <img
+                  src="./assets/images/tic-tac-toe.png"
+                  alt="Tic Tac Toe Game"
+                />
+              </a>
             </div>
-        </section>
+            <a class="my-link" href="https://github.com/rhoverholt/TicTacToe"
+              >Github Repository - Tic Tac Toe</a
+            >
+          </div>
 
-        <!-- Present several work samples -->
-        <section id="work">
-            <h1 class="section-title">Recent Projects</h1>
-
-            <div class="section-details">
-                <div class="first-project">
-                    <div class="project">
-                        <a href="https://rhoverholt.github.io/TicTacToe/">
-                            <h1>Tic Tac Toe - dynamic</h1>
-                            <img src="./assets/images/tic-tac-toe.png" alt="Tic Tac Toe Game">
-                        </a>
-                    </div>
-                    <a class="my-link" href="https://github.com/rhoverholt/TicTacToe">Github Repository - Tic Tac Toe</a>
-                </div>
-
-                <div class="other-projects">
-                    <div class="project">
-                        <a href="https://rhoverholt.github.io/6hwk-Weather-Dashboard/">
-                            <h1>Weather Dashboard - Web API, Local Storage</h1>
-                            <img src="./assets/images/weather-dashboard.jpg" alt="Weather Dashboard">
-                        </a>
-                    </div>
-                    <a class="my-link" href="https://github.com/rhoverholt/6hwk-Weather-Dashboard">Github Repository - Weather Dashboard</a>
-                    
-                    <div class="project">
-                        <a href="https://kolatham.github.io/fun-with-horoscopes/">
-                            <h1>Fun with Horoscopes - Web API, Team Project</h1>
-                            <img src="./assets/images/fun-with-horoscopes.jpg" alt="Fun with Horoscopes Screenshot">
-                        </a>
-                    </div>
-                    <a class="my-link" href="https://github.com/rhoverholt/fun-with-horoscopes">Github Repository - Fun with Horoscopes</a>
-
-                    <div class="project">
-                        <a href="https://rhoverholt.github.io/4hwk-code-quiz/">
-                            <h1>Coding Quiz - First dynamic project</h1>
-                            <img src="./assets/images/Screen Shot 2021-12-18 at 4.02.39 PM.png" alt="Coding Quiz">
-                        </a>
-                    </div>
-                    <a class="my-link" href="https://github.com/rhoverholt/4hwk-code-quiz">Github Repository - Coding Quiz</a>
-
-                </div>
+          <div class="other-projects">
+            <div class="project">
+              <a href="https://rhoverholt.github.io/6hwk-Weather-Dashboard/">
+                <h1>Weather Dashboard - Web API, Local Storage</h1>
+                <img
+                  src="./assets/images/weather-dashboard.jpg"
+                  alt="Weather Dashboard"
+                />
+              </a>
             </div>
-        </section>
+            <a
+              class="my-link"
+              href="https://github.com/rhoverholt/6hwk-Weather-Dashboard"
+              >Github Repository - Weather Dashboard</a
+            >
 
-        <!-- Communicate how to contact me -->
-        <section id="contact-me">
-            <h1 class="section-title">Contact Me</h1>
-        
-            <div class="section-details" id="contact-info">
-                <div class="contact-email">
-                    <a class="my-link" href="mailto:rhocoding@gmail.com" alt="E-Mail">rhocoding@gmail.com</a>
-                </div>
-
-                <div class="contact-github">
-                    <a class="my-link" href="https://github.com/rhoverholt" alt="Git Hub URL">GitHub</a>
-                </div>
-
-                <div class="contact-linkedin">
-                    <a class="my-link" href="https://www.linkedin.com/in/richardoverholt/" alt="LinkedIn URL">LinkedIn</a>
-                </div>
+            <div class="project">
+              <a href="https://kolatham.github.io/fun-with-horoscopes/">
+                <h1>Fun with Horoscopes - Web API, Team Project</h1>
+                <img
+                  src="./assets/images/fun-with-horoscopes.jpg"
+                  alt="Fun with Horoscopes Screenshot"
+                />
+              </a>
             </div>
-        </section>
+            <a
+              class="my-link"
+              href="https://github.com/rhoverholt/fun-with-horoscopes"
+              >Github Repository - Fun with Horoscopes</a
+            >
 
+            <div class="project">
+              <a href="https://rhoverholt.github.io/4hwk-code-quiz/">
+                <h1>Coding Quiz - First dynamic project</h1>
+                <img
+                  src="./assets/images/Screen Shot 2021-12-18 at 4.02.39 PM.png"
+                  alt="Coding Quiz"
+                />
+              </a>
+            </div>
+            <a
+              class="my-link"
+              href="https://github.com/rhoverholt/4hwk-code-quiz"
+              >Github Repository - Coding Quiz</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Communicate how to contact me -->
+      <section id="contact-me">
+        <h1 class="section-title">Contact Me</h1>
+
+        <div class="section-details" id="contact-info">
+          <div class="contact-email">
+            <a class="my-link" href="mailto:rhocoding@gmail.com" alt="E-Mail"
+              >rhocoding@gmail.com</a
+            >
+          </div>
+
+          <div class="contact-github">
+            <a
+              class="my-link"
+              href="https://github.com/rhoverholt"
+              alt="Git Hub URL"
+              >GitHub</a
+            >
+          </div>
+
+          <div class="contact-linkedin">
+            <a
+              class="my-link"
+              href="https://www.linkedin.com/in/richardoverholt/"
+              alt="LinkedIn URL"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
