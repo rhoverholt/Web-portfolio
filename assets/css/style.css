@@ -1,19 +1,18 @@
-
 /* Asign constants for the colors and fonts so they can be easily changed */
 :root {
-    --title-background:rgb(161, 161, 161);
-    --title-color:rgb(45, 50, 83);
-    --old-title-background:rgb(48, 48, 48);
-    --old-title-color:rgb(107, 116, 23);
-    --banner-font-xl: 150px;
-    --banner-font-1400: 125px;
-    --banner-font-1175: 100px;
-    --banner-font-950: 75px;
-    --banner-font-760: 50px;
-    --largest-font: 36px;
-    --large-font: 28px;
-    --medium-font: 18px;
-    --small-font: 12px;
+  --title-background: rgb(161, 161, 161);
+  --title-color: rgb(45, 50, 83);
+  --old-title-background: rgb(48, 48, 48);
+  --old-title-color: rgb(107, 116, 23);
+  --banner-font-xl: 150px;
+  --banner-font-1400: 125px;
+  --banner-font-1175: 100px;
+  --banner-font-950: 75px;
+  --banner-font-760: 50px;
+  --largest-font: 36px;
+  --large-font: 28px;
+  --medium-font: 18px;
+  --small-font: 12px;
 }
 
 /****************************************************/
@@ -24,146 +23,151 @@
 /* Setup the header row */
 /************************/
 header {
-    background-color: var(--title-background);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 0%;
+  background-color: var(--title-background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0%;
 }
 
 .header-title {
-    background-color: var(--title-color);
-    color: var(--title-background);
-    padding-left: 5%;
-    padding-right: 1%;
-    font-size: var(--largest-font);
-    font-weight: bolder;
+  background-color: var(--title-color);
+  color: var(--title-background);
+  padding-left: 5%;
+  padding-right: 1%;
+  font-size: var(--largest-font);
+  font-weight: bolder;
 }
 
 header nav {
-    padding-right: 1%;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
+  padding-right: 1%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav a {
-    color: var(--title-color);
-    font-size: var(--large-font);
+  color: var(--title-color);
+  font-size: var(--large-font);
 }
 
 header nav a:hover {
-    color: var(--title-background);
-    background-color: var(--title-color);
+  color: var(--title-background);
+  background-color: var(--title-color);
 }
 
 /***************************************************************/
 /* Arrange the banner row, both my avatar and the banner image */
 /***************************************************************/
 .banner {
-    background-color: var(--title-color);
-    position: relative;
-    display: flex;
+  background-color: var(--title-color);
+  position: relative;
+  display: flex;
 }
 
 .banner-start {
-    display: inline-block;
-    width: 20%;
-    border-radius: 50%;
-    padding: 20px;
+  display: inline-block;
+  width: 20%;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 .banner-end {
-    display: inline-block;
-    margin: auto 20px auto 0px;
-    background: black;
-    color: green;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: var(--banner-font-xl);
-    width: 80%;
-    height: 15%;
+  display: inline-block;
+  margin: auto 20px auto 0px;
+  background: black;
+  color: green;
+  font-family: "Courier New", Courier, monospace;
+  font-size: var(--banner-font-xl);
+  width: 80%;
+  height: 15%;
 }
 
 .banner h1 {
-    background-color: var(--title-background);
-    color: var(--title-color);
-    position: absolute;
-    padding: 1% 5% 1% 1%;
-    right: 0%;
-    bottom: 5%;
-    font-size: var(--large-font);
+  background-color: var(--title-background);
+  color: var(--title-color);
+  position: absolute;
+  padding: 1% 5% 1% 1%;
+  right: 0%;
+  bottom: 5%;
+  font-size: var(--large-font);
 }
 
 /******************************************/
 /* Format the primary section information */
 /******************************************/
 section {
-    display:flex;
-    width: 100%;
-    margin: 2%;
+  display: flex;
+  width: 100%;
+  margin: 2%;
+  background-color: var(--title-background);
 }
 
 .section-title {
-    width:20%;
-    margin-top: 0px;
-    color: var(--title-color);
-    font-size: var(--large-font);
-    padding-left: 20px;
+  width: 20%;
+  margin-top: 0px;
+  color: var(--title-color);
+  font-size: var(--large-font);
+  padding-left: 20px;
 }
 
 .section-details {
-    font-size: var(--medium-font);
-    width: 80%;
-    padding-right: 5%;
+  font-size: var(--medium-font);
+  width: 80%;
+  padding-right: 5%;
 }
 
 .section-details p {
-    line-height: 120%;
-    margin-bottom: 1ch;
+  line-height: 120%;
+  margin-bottom: 1ch;
+}
+
+.no-line {
+  text-decoration-line: none;
 }
 
 /**********************************************************************************/
 /* Introduce specific formats that allow the work images to display appropriately */
 /**********************************************************************************/
 #work .section-details {
-    display: inline-block;
-    text-align: center;
-    text-align-last: center;
+  display: inline-block;
+  text-align: center;
+  text-align-last: center;
 }
 
 .first-project {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
 }
 
 .other-projects {
-    display: inline-block;
-    width: 49%;
+  display: inline-block;
+  width: 49%;
 }
 
 .project {
-    display:inline-block;
-    width: 100%;
-/*    vertical-align: top; */
-    border: 2px solid var(--title-background);
+  display: inline-block;
+  width: 100%;
+  /*    vertical-align: top; */
+  border: 2px solid var(--title-background);
 }
 
 .project img {
-    width:100%;
+  width: 100%;
 }
 
 .project {
-    margin: 20px 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
 }
 
 .project h1 {
-    text-align: center;
-    text-align-last: center;
-    background: var(--title-color);
-    color: var(--title-background);
-    padding: 10px;
+  text-align: center;
+  text-align-last: center;
+  background: var(--title-color);
+  color: var(--title-background);
+  padding: 10px;
 }
 
 /*********************************/
@@ -171,128 +175,134 @@ section {
 /*********************************/
 
 #contact-me {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 #contact-me .section-details {
-    display: flex;
-    float: right;
-    justify-content: space-around;
+  display: flex;
+  float: right;
+  justify-content: space-around;
 }
 
 #contact-me div,
 #contact-me a {
-    align-items: center;
-    color: var(--title-color);
-    font-size: var(--medium-font);
+  align-items: center;
+  color: var(--title-color);
+  font-size: var(--medium-font);
 }
 
 .my-link {
-    color: var(--title-color);
+  color: var(--title-color);
 }
 
 .my-link:hover {
-background-color:var(--title-background);
-color: var(--title-color);
+  background-color: var(--title-background);
+  color: var(--title-color);
 }
-
 
 /*******************************************************************/
 /* As the screen width shrinks, some of the above needs to change. */
 /*******************************************************************/
 
 /* The banner font needs to react to smaller widths */
-@media screen and (max-width:1400px) {
-    .banner-end {
-        font-size: var(--banner-font-1400);
-    }
+@media screen and (max-width: 1400px) {
+  .banner-end {
+    font-size: var(--banner-font-1400);
+  }
 }
 
-@media screen and (max-width:1400px) {
-    .banner-end {
-        font-size: var(--banner-font-1175);
-    }
+@media screen and (max-width: 1400px) {
+  .banner-end {
+    font-size: var(--banner-font-1175);
+  }
 }
 
-@media screen and (max-width:950px) {
-    .banner-end {
-        font-size: var(--banner-font-950);
-    }
+@media screen and (max-width: 950px) {
+  .banner-end {
+    font-size: var(--banner-font-950);
+  }
 }
 
 /* Shrink the contact-me information to keep it from wrapping */
-@media screen and (max-width:845px) {
-    #contact-me div,
-    #contact-me a {
-        font-size: var(--small-font);
-    }
+@media screen and (max-width: 845px) {
+  #contact-me div,
+  #contact-me a {
+    font-size: var(--small-font);
+  }
 }
 
 /* Shrink text to prevent wrapping */
-@media screen and (max-width:760px) {
-    
-    .banner-end {
-        font-size: var(--banner-font-760);
-    }
+@media screen and (max-width: 760px) {
+  .banner-end {
+    font-size: var(--banner-font-760);
+  }
 
-    .header-title {
-        font-size: var(--large-font);
-    }
-    
-    .section-title, .project h1, header nav a, .banner h1 {
-        font-size: var(--medium-font);
-    }
+  .header-title {
+    font-size: var(--large-font);
+  }
+
+  .section-title,
+  .project h1,
+  header nav a,
+  .banner h1 {
+    font-size: var(--medium-font);
+  }
 }
 
 /* Due to the much smaller width, change from a side by side display to everything being in a column */
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px) {
+  .banner-end {
+    margin-top: 10px;
+  }
 
-    .banner-end {
-        margin-top: 10px;
-    }
+  .section-details {
+    padding-right: 0px;
+    text-align-last: left;
+  }
 
-    .section-details {
-        padding-right: 0px;
-        text-align-last: left;
-    }
+  header,
+  section,
+  #contact-me,
+  #contact-info {
+    display: block;
+    text-align-last: center;
+  }
 
-    header, section, #contact-me, #contact-info {
-        display: block;
-        text-align-last: center;
-    }
+  header nav {
+    width: 100%;
+  }
 
-    header nav {
-        width: 100%;
-    }
+  .header-title {
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 2% 0% auto;
+  }
 
-    .header-title {
-        display: inline-block;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin: 2% 0% auto;
-    }
+  .section-title {
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2%;
+  }
 
-    .section-title {
-        width: 100%;
-        text-decoration: underline;
-        text-align: center;
-        margin-bottom: 2%;
-    }
+  .first-project,
+  .other-projects,
+  .project,
+  .section-details {
+    width: 100%;
+  }
 
-    .first-project, .other-projects, .project, .section-details {
-        width: 100%;
-    }
+  #contact-me .section-details {
+    display: block;
+  }
 
-    #contact-me .section-details {
-        display: block;
-    }
-
-    #contact-me div,
-    #contact-me a {
-        font-size: var(--medium-font);
-    }
+  #contact-me div,
+  #contact-me a {
+    font-size: var(--medium-font);
+  }
 }
